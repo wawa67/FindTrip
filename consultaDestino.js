@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 // Access your API key as an environment variable (see "Set up your API key" above)
 const model = await inicializaModelo("gemini-1.0-pro")
-export async function consulta() {
+export async function consultar() {
   const categorias = await fazerPergunta("Me fale sobre as categorias que quer saber realacionadas ao destino?\n")
 
   const prompt = await fazerPergunta("Me pergunte sobre viagens?\n")
